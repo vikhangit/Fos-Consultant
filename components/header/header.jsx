@@ -101,12 +101,12 @@ function Header() {
           styles.header + "  " + "justify-content-between mx-auto text-left row"
         }
       >
-        <div className={styles.logo + " " + "col-2 ms-3 ms-sm-0"}>
+        <div className={styles.logo + " " + " pt-2 pb-2 col-2 ms-3 ms-sm-0"}>
           <Image
             alt="logo"
             src={Logo}
-            width={150}
-            height={70}
+            width={250}
+            height={80}
             onClick={() => {
               router.push("/");
             }}
