@@ -6,8 +6,8 @@ export default function Document() {
       <Head>
         <meta name="theme-color" content="#000000"></meta>
         {/* logo favicon */}
-        <link href="/images/fav2.png" rel="icon" />
-        <link href="/images/fav2.png" rel="apple-touch-icon"></link>
+        <link href="/images/logo.jpg" rel="icon" />
+        <link href="/images/logo.jpg" rel="apple-touch-icon"></link>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

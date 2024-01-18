@@ -1,7 +1,8 @@
 .custom {
 	position: relative;
 	overflow: hidden;
-	height: calc(100vh - 80px);
+	// height: calc(100vh - 80px);
+	padding: 50px 0px;
 
 	&_crm {
 		&_image {

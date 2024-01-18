@@ -452,8 +452,9 @@ function HomePage() {
           </section>
 
           <section className="section mt-home">
-            <About />
+           
           </section>
+          <About />
 
           <section className="section mt-home">
             <Contact />

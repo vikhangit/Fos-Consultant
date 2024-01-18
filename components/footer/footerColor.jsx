@@ -13,7 +13,7 @@ function FooterColor() {
 
       <div className="d-flex flex-wrap">
         <div className="col-12 col-sm position-relative">
-          <h4 className="text-white fostech">Fostech</h4>
+          <h4 className="text-white fostech">GOOD APP</h4>
         </div>
 
         <div className="col-4 col-sm d-flex flex-column">
@@ -55,7 +55,7 @@ function FooterColor() {
       <hr />
 
       <div className="text-center">
-        <p>© Copyright FOSTECH . All rights reserved</p>
+        <p>© Copyright GOOD APP. All rights reserved</p>
       </div>
     </div>
   );

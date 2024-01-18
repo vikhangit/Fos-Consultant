@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
-import Logo from "../../public/images/LOGOFOSTECH-01.png";
+import Logo from "../../public/images/logo.jpg";
 import styles from "./header.module.scss";
 // Test
 
@@ -101,11 +101,11 @@ function Header() {
           styles.header + "  " + "justify-content-between mx-auto text-left row"
         }
       >
-        <div className={styles.logo + " " + "col-2 p-0 pt-1 ms-3 ms-sm-0"}>
+        <div className={styles.logo + " " + "col-2 pt-3 pb-2 ms-3 ms-sm-0"}>
           <Image
             alt="logo"
             src={Logo}
-            width={100}
+            width={150}
             height={70}
             onClick={() => {
               router.push("/");

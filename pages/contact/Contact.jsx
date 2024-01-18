@@ -74,17 +74,17 @@ export default function Contact() {
                 className="fas fa-phone-volume"
                 style={{ transform: "translateX(4px) rotate(-45deg)" }}
               ></i>
-              <a href="tel:02866866067">+84 028 668 660 67</a>
+              <a href="tel:84933311733">+84.933.311.733</a>
             </div>
 
             <div className="d-flex flex-row align-items-center my-2">
               <i className="fas fa-envelope"></i>
               <a
-                href="mailto:info@fostech.vn"
+                href="mailto:info@goodapp.vn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                info@fostech.vn
+                info@goodapp.vn
               </a>
             </div>
 
@@ -95,7 +95,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                fostech.vn
+                https://goodapp.vn
               </a>
             </div>
 
@@ -106,8 +106,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 href="https://goeco.link/UuAKt"
               >
-                No.1-3 D4 Street, Him Lam Kenh Te Residential Area, Tan Hung
-                Ward, District 7, Ho Chi Minh City
+                35 Hoa Sứ, Phường 07, Quận Phú Nhuận, Tp HCM
               </a>
             </div>
           </div>

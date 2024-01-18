@@ -6,7 +6,7 @@ export default function Seo(props) {
 
   return (
     <Head>
-      <title>{title ? title : "Fostech Consultant"}</title>
+      <title>{title ? title : "Good App"}</title>
 
       <meta name="title" content={title} />
       <meta name="description" content={description} />

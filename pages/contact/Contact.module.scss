@@ -1,7 +1,6 @@
 .contact {
     padding: 0 0 0 100px;
     overflow: hidden;
-    height: calc(100vh - 80px);
 
     &_left {
         position: absolute;
@@ -27,7 +26,8 @@
 
     &_boxImage {
         position: relative;
-        height: calc(100vh - 80px);
+        // height: calc(100vh - 80px);
+        height: 650px;
 
         &_image {
             position: absolute;
