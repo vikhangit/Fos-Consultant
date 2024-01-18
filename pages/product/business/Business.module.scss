@@ -1,0 +1,237 @@
+.business {
+	position: relative;
+	overflow: hidden;
+	padding: 0 100px;
+	height: calc(100vh - 80px);
+
+	&_image {
+		position: relative;
+		z-index: 1;
+		gap: 30px;
+		padding: 50px 0 50px 0;
+
+		&_left {
+			position: relative;
+
+			span {
+				border-radius: 15px;
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 75%;
+				left: 0;
+				transform: translate(-50%, -50%);
+
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+				z-index: 10;
+			}
+		}
+
+		&_right {
+			position: relative;
+
+			span {
+				border-radius: 15px;
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 75%;
+				right: 0;
+				transform: translate(50%, -50%);
+
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+				z-index: 10;
+			}
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			width: 600px;
+			height: 600px;
+			border-radius: 50%;
+			background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+			z-index: -1;
+		}
+	}
+
+	&_content {
+		font-size: 15px;
+		line-height: 20px;
+		max-width: 250px;
+	}
+}
+
+@media all and (min-width: 577px) and (max-width: 992px) {
+	.business {
+		position: relative;
+		overflow: hidden;
+		padding: 25px 15px;
+		height: fit-content;
+
+		&_image {
+			position: relative;
+			z-index: 1;
+			gap: 10px;
+			padding: 30px 25px;
+
+			&_left {
+				position: relative;
+
+				span {
+					border-radius: 15px;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					top: 75%;
+					left: 0;
+					transform: translate(-50%, -50%);
+
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+					background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+					z-index: 10;
+				}
+			}
+
+			&_right {
+				position: relative;
+
+				span {
+					border-radius: 15px;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					top: 75%;
+					right: 0;
+					transform: translate(50%, -50%);
+
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+					background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+					z-index: 10;
+				}
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 35%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				width: 280px;
+				height: 280px;
+				border-radius: 50%;
+				background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+				z-index: -1;
+			}
+		}
+
+		&_content {
+			font-size: 15px;
+			line-height: 20px;
+			max-width: 250px;
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.business {
+		position: relative;
+		overflow: hidden;
+		padding: 25px 15px;
+		height: fit-content;
+
+		&_image {
+			position: relative;
+			z-index: 1;
+			gap: 10px;
+			padding: 30px 25px;
+
+			&_left {
+				position: relative;
+
+				span {
+					border-radius: 15px;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					top: 75%;
+					left: 0;
+					transform: translate(-50%, -50%);
+
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+					z-index: 10;
+				}
+			}
+
+			&_right {
+				position: relative;
+
+				span {
+					border-radius: 15px;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					top: 75%;
+					right: 0;
+					transform: translate(50%, -50%);
+
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+					z-index: 10;
+				}
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: 35%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				width: 180px;
+				height: 180px;
+				border-radius: 50%;
+				background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+				z-index: -1;
+			}
+		}
+
+		&_content {
+			font-size: 15px;
+			line-height: 20px;
+			max-width: 250px;
+		}
+	}
+}

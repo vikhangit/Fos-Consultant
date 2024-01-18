@@ -1,0 +1,426 @@
+.contact {
+    padding: 0 0 0 100px;
+    overflow: hidden;
+    height: calc(100vh - 80px);
+
+    &_left {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &_box {
+        color: #fff;
+        padding: 20px;
+        margin: 40px 0;
+        background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+        border-radius: 10px;
+        font-size: 18px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding-left: 10px;
+        }
+    }
+
+    &_boxImage {
+        position: relative;
+        height: calc(100vh - 80px);
+
+        &_image {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 10px);
+            z-index: 100;
+
+            span {
+                border-radius: 20px 20px 0 0;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translate(50%, -50%);
+
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+                z-index: 100;
+            }
+        }
+
+        &_title {
+            width: 100%;
+            position: absolute;
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .contact_form {
+            display: flex;
+            align-items: end;
+
+            background-image: url(../../public/images/iPhone14.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 60px 15px 30px 15px;
+            min-height: 550px;
+
+            form {
+                width: 80%;
+                margin: 0 auto;
+
+                span {
+                    color: #fff;
+                    font-weight: 500;
+                    margin-bottom: 2px;
+                    text-shadow: 3px 1px 4px #000000;
+                }
+
+                input {
+                    border: 2px solid transparent;
+                    border-radius: 3px;
+                    background-color: #fff;
+                    color: #000;
+                    padding: 4px 10px;
+                    box-shadow: 0rem 0.25rem 0.75rem rgba(0, 0, 0, 0.5);
+
+                    &::placeholder {
+                        font-style: italic;
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    border: none;
+                    border-radius: 50px;
+                    background-color: #f66e1a;
+                    padding: 10px 0;
+                    color: #fff;
+                    transition-delay: 0.1s;
+
+                    &:hover {
+                        background-position: right center;
+                        background-size: 200% auto;
+                        animation: btnHover 1.5s infinite;
+                    }
+                }
+            }
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+        }
+    }
+}
+
+@keyframes btnHover {
+    0% {
+        box-shadow: 0 0 0 0 #e86c20;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+@media all and (min-width: 577px) and (max-width: 992px) {
+    .contact {
+        padding: 0;
+        overflow: hidden;
+        height: auto;
+
+        &_left {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &_box {
+            color: #fff;
+            padding: 20px;
+            margin: 40px 0;
+            background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+            border-radius: 10px;
+            font-size: 18px;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                padding-left: 10px;
+            }
+        }
+
+        &_boxImage {
+            position: relative;
+            height: fit-content;
+            min-height: 650px;
+
+            &_image {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 10px);
+                z-index: 100;
+
+                span {
+                    border-radius: 20px 20px 0 0;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: translate(50%, -50%);
+
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+                    z-index: 100;
+                }
+            }
+
+            &_title {
+                width: 100%;
+                position: absolute;
+                top: -80px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                text-align: center;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .contact_form {
+                display: flex;
+                align-items: end;
+
+                background-image: url(../../public/images/iPhone14.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 60px 15px 30px 15px;
+                min-height: 550px;
+
+                form {
+                    width: 80%;
+                    margin: 0 auto;
+
+                    span {
+                        color: #fff;
+                        font-weight: 500;
+                        margin-bottom: 2px;
+                        text-shadow: 3px 1px 4px #000000;
+                    }
+
+                    input {
+                        border: 2px solid transparent;
+                        border-radius: 3px;
+                        background-color: #fff;
+                        color: #000;
+                        padding: 4px 10px;
+                        box-shadow: 0rem 0.25rem 0.75rem rgba(0, 0, 0, 0.5);
+
+                        &::placeholder {
+                            font-style: italic;
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                        border: none;
+                        border-radius: 50px;
+                        background-color: #f66e1a;
+                        padding: 10px 0;
+                        color: #fff;
+                        transition-delay: 0.1s;
+
+                        &:hover {
+                            background-position: right center;
+                            background-size: 200% auto;
+                            animation: btnHover 1.5s infinite;
+                        }
+                    }
+                }
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 50%);
+
+                width: 800px;
+                height: 800px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+            }
+        }
+    }
+}
+
+@media all and (max-width: 576px) {
+    .contact {
+        padding: 20px 15px 40px 15px;
+        overflow: hidden;
+        height: fit-content;
+
+        &_left {
+            position: relative;
+        }
+
+        &_box {
+            color: #fff;
+            padding: 15px;
+            margin: 0 0 90px 0;
+            background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+            border-radius: 10px;
+            font-size: 18px;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                padding-left: 10px;
+            }
+        }
+
+        &_boxImage {
+            position: relative;
+            height: fit-content;
+
+            &_image {
+                position: relative;
+                z-index: 100;
+
+                span {
+                    border-radius: 20px 20px 0 0;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: translate(50%, -50%);
+
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+                    z-index: 100;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 60%;
+                    left: 0;
+                    transform: translate(-50%, -50%);
+
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #f66e1a 0%, #743ee3 100%);
+                    z-index: 100;
+                }
+            }
+
+            &_title {
+                position: absolute;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .contact_form {
+                display: flex;
+                align-items: start;
+
+                background-image: none;
+                padding: 15px 15px;
+                min-height: 400px;
+
+                form {
+                    width: 90%;
+                    margin: 0 auto;
+
+                    span {
+                        color: #000;
+                        font-weight: 500;
+                        margin-bottom: 2px;
+                        text-shadow: none;
+                    }
+
+                    input,
+                    input[type="email"] {
+                        border: 2px solid transparent;
+                        border-radius: 3px;
+                        background-color: #fff;
+                        color: #000;
+                        padding: 4px 10px;
+
+                        -webkit-appearance: none !important;
+                        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5) !important;
+                        -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5) !important;
+                        -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5) !important;
+
+                        &::placeholder {
+                            font-style: italic;
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                        border: none;
+                        border-radius: 50px;
+                        background-color: #f66e1a;
+                        padding: 10px 0;
+                        color: #fff;
+                        transition-delay: 0.1s;
+                        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+                        -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+                        -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+
+                        &:hover {
+                            background-position: right center;
+                            background-size: 200% auto;
+                            animation: btnHover 1.5s infinite;
+                        }
+                    }
+                }
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

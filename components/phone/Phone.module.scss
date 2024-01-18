@@ -1,0 +1,121 @@
+.btnPhone {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    z-index: 1000;
+    border: none;
+    outline: none;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -5%;
+        left: -5%;
+
+        width: 110%;
+        height: 110%;
+        border-radius: 50%;
+        background-color: #e68c55;
+        z-index: -1;
+        animation: grow 2s infinite ease-in-out;
+    }
+
+    &:hover {
+        &::after {
+            animation: none;
+        }
+    }
+
+    a {
+        background-color: transparent;
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    button {
+        width: 55px;
+        height: 55px;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #f66e1a;
+        border: none;
+        outline: none;
+    }
+
+    i {
+        color: #fff;
+        font-size: 30px;
+        animation: ring 1s infinite ease-in-out;
+    }
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0);
+    }
+    10% {
+        transform: rotate(-25deg);
+    }
+    20% {
+        transform: rotate(25deg);
+    }
+    30% {
+        transform: rotate(-25deg);
+    }
+    40% {
+        transform: rotate(25deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+        opacity: 0.35;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.35;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .btnPhone {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+
+        &::after {
+            display: none;
+        }
+
+        button {
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: #f66e1a;
+            border: none;
+            outline: none;
+        }
+
+        i {
+            color: #fff;
+            font-size: 26px;
+            animation: ring 1s infinite ease-in-out;
+        }
+    }
+}

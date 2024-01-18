@@ -1,0 +1,21 @@
+.mainlayout {
+	color: #000;
+	max-width: 1920px;
+	width: 100% !important;
+	overflow: hidden;
+	background-color: #fff;
+	margin: 0 auto;
+	font-family: "Hanken Grotesk", sans-serif;
+
+	.children {
+		padding: 80px 0px 0px 0px;
+	}
+}
+
+@media all and (max-width: 576px) {
+	.mainlayout {
+		.children {
+			padding: 56px 0px 0px 0px;
+		}
+	}
+}

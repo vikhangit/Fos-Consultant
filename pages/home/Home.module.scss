@@ -1,0 +1,411 @@
+.home {
+	background-image: url(../../public/images/backgroundPC.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	max-width: 1920px;
+	width: 100% !important;
+	margin: 0 auto;
+
+	&_child {
+		p,
+		h6 {
+			color: #fff;
+		}
+		span {
+			color: #fff !important;
+		}
+	}
+
+	&_box_1 {
+		margin-bottom: 4px;
+
+		.slogan {
+			font-size: 18px;
+			line-height: 22px;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 8px;
+			color: #f66e1a;
+			background-color: #002d70;
+			padding: 4px;
+		}
+
+		.content {
+			background: linear-gradient(90deg, #f66e1a 0%, #743ee3 100%);
+			padding: 0 30px;
+			color: #fff !important;
+
+			h1 {
+				color: #fff;
+				padding: 30% 0 25% 0;
+				font-size: 45px;
+			}
+		}
+
+		.arrow {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			margin-bottom: 30px;
+			width: 70px;
+			height: 70px;
+			background-color: transparent;
+			border-radius: 50%;
+			border: 5px solid #fff;
+
+			cursor: pointer;
+
+			i {
+				font-size: 40px;
+			}
+
+			&:hover {
+				i {
+					animation: arrow 1.85s ease-in-out infinite;
+				}
+			}
+		}
+	}
+
+	&_box {
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding: 0px 40px;
+		min-height: calc((100vh - 120px) / 2);
+
+		&_heading {
+			color: #000;
+			font-size: 40px;
+			cursor: pointer;
+		}
+
+		&_2 {
+			background: linear-gradient(90deg, #7c2ae8 0%, #00c4cc 100%);
+		}
+		&_3 {
+			background: linear-gradient(90deg, #00c4cc 0%, #c9fdff 100%);
+		}
+		&_4 {
+			background: linear-gradient(90deg, #c9fdff 0%, #fff 100%);
+		}
+		&_5 {
+			background: linear-gradient(90deg, #7c2ae8 0%, #00c4cc 100%);
+		}
+		&_6 {
+			background: linear-gradient(90deg, #00c4cc 0%, #c9fdff 100%);
+		}
+		&_7 {
+			background: linear-gradient(90deg, #c9fdff 0%, #fff 100%);
+		}
+	}
+}
+
+@keyframes arrow {
+	0% {
+		opacity: 1;
+		transform: translateX(0px) scale(1);
+	}
+
+	20% {
+		opacity: 0;
+		transform: translateX(50%) scale(0.8);
+	}
+
+	40% {
+		opacity: 0;
+		transform: translateX(-50%) scale(0.7);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translateX(0px) scale(1);
+	}
+}
+
+@media all and (min-width: 993px) and (max-width: 1280px) {
+	.home {
+		&_box_1 {
+			.slogan {
+				font-size: 16px;
+				line-height: 20px;
+				padding: 2px;
+			}
+
+			.content {
+				padding: 0 25px;
+
+				h1 {
+					font-size: 30px;
+				}
+
+				i {
+					font-size: 40px;
+				}
+			}
+
+			.arrow {
+				width: 60px;
+				height: 60px;
+
+				i {
+					font-size: 35px;
+				}
+			}
+		}
+
+		&_box {
+			padding: 0px 25px;
+			min-height: 310px;
+
+			&_heading {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+	.home {
+		&_box_1 {
+			.slogan {
+				font-size: 16px;
+				line-height: 20px;
+				padding: 2px;
+			}
+
+			.content {
+				padding: 0 25px;
+
+				h1 {
+					font-size: 20px;
+				}
+
+				i {
+					font-size: 40px;
+				}
+			}
+
+			.arrow {
+				width: 50px;
+				height: 50px;
+
+				i {
+					font-size: 30px;
+				}
+			}
+		}
+
+		&_box {
+			padding: 0px 25px;
+			min-height: 310px;
+
+			&_heading {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media all and (min-width: 577px) and (max-width: 992px) {
+	.home {
+		background-image: url(../../public/images/backgroundMB.png);
+		background-position: center;
+		background-repeat: repeat;
+		background-size: contain;
+
+		&_box_1 {
+			height: auto;
+
+			.slogan {
+				font-size: 16px;
+				line-height: 21px;
+				letter-spacing: 6px;
+				background-color: transparent;
+			}
+
+			.content {
+				background: linear-gradient(180deg, #f66e1a 0%, #743ee3 100%);
+				padding: 0 15px;
+
+				h1 {
+					padding-top: 50px;
+					font-size: 24px;
+				}
+			}
+
+			.arrow {
+				margin-bottom: 15px;
+				width: 40px;
+				height: 40px;
+				border: 3px solid #fff;
+
+				i {
+					font-size: 24px;
+				}
+
+				&:hover {
+					i {
+						animation: arrow 1.85s ease-in-out infinite;
+					}
+				}
+			}
+		}
+
+		&_box {
+			position: relative;
+			display: flex;
+			align-items: center;
+			padding: 0px 15px;
+			min-height: 30vw;
+
+			&_heading {
+				color: #000;
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 576px) {
+	.home {
+		background-image: url(../../public/images/backgroundMB.png);
+		background-position: center;
+		background-repeat: repeat;
+		background-size: contain;
+
+		&_box_1 {
+			height: auto;
+
+			.slogan {
+				font-size: 16px;
+				line-height: 21px;
+				letter-spacing: 6px;
+				background-color: transparent;
+			}
+
+			.content {
+				background: linear-gradient(180deg, #f66e1a 0%, #743ee3 100%);
+				padding: 0 15px;
+
+				h1 {
+					padding-top: 50px;
+					font-size: 24px;
+				}
+			}
+
+			.arrow {
+				margin-bottom: 15px;
+				width: 40px;
+				height: 40px;
+				border: 3px solid #fff;
+
+				i {
+					font-size: 24px;
+				}
+
+				&:hover {
+					i {
+						animation: arrow 1.85s ease-in-out infinite;
+					}
+				}
+			}
+		}
+
+		&_box {
+			position: relative;
+			display: flex;
+			align-items: center;
+			padding: 0px 15px;
+			min-height: 40vw;
+
+			&_heading {
+				color: #000;
+				font-size: 24px;
+			}
+
+			&_2 {
+				background: linear-gradient(180deg, #7c2ae8 0%, #00c4cc 100%);
+			}
+			&_3 {
+				background: linear-gradient(180deg, #7c2ae8 0%, #00c4cc 100%);
+			}
+			&_4 {
+				background: linear-gradient(180deg, #00c4cc 0%, #c9fdff 100%);
+			}
+			&_5 {
+				background: linear-gradient(180deg, #00c4cc 0%, #c9fdff 100%);
+			}
+			&_6 {
+				background: linear-gradient(180deg, #c9fdff 0%, #fff 100%);
+			}
+			&_7 {
+				background: linear-gradient(180deg, #c9fdff 0%, #fff 100%);
+			}
+		}
+	}
+}
+
+@media all and (max-width: 365px) {
+	.home {
+		&_box_1 {
+			.slogan {
+				font-size: 15px;
+				line-height: 20px;
+				letter-spacing: 5px;
+			}
+
+			.content {
+				h1 {
+					padding-top: 50px;
+					font-size: 20px;
+				}
+			}
+
+			.arrow {
+				margin-bottom: 15px;
+				width: 35px;
+				height: 35px;
+				border: 3px solid #fff;
+
+				i {
+					font-size: 22px;
+				}
+			}
+		}
+
+		&_box {
+			&_heading {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 330px) {
+	.home {
+		&_box_1 {
+			.slogan {
+				font-size: 14px;
+				line-height: 20px;
+				letter-spacing: 4px;
+			}
+
+			.content {
+				h1 {
+					padding-top: 50px;
+					font-size: 18px;
+				}
+			}
+		}
+
+		&_box {
+			&_heading {
+				font-size: 18px;
+			}
+		}
+	}
+}
