@@ -106,7 +106,7 @@ function Header() {
             alt="logo"
             src={Logo}
             width={160}
-            height={60}
+            height={55}
             onClick={() => {
               router.push("/");
             }}
