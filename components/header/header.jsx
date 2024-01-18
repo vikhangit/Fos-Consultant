@@ -101,7 +101,7 @@ function Header() {
           styles.header + "  " + "justify-content-between mx-auto text-left row"
         }
       >
-        <div className={styles.logo + " " + "col-2 pt-3 pb-2 ms-3 ms-sm-0"}>
+        <div className={styles.logo + " " + "col-2 ms-3 ms-sm-0"}>
           <Image
             alt="logo"
             src={Logo}
