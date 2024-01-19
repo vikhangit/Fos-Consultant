@@ -98,15 +98,20 @@ function Header() {
     >
       <div
         className={
-          styles.header + "  " + "justify-content-between mx-auto text-left row"
+          styles.header + "  " + "justify-content-between align-items-center mx-auto text-left d-flex pt-2 pb-2"
         }
       >
-        <div className={styles.logo + " " + " pt-2 pb-2 col-2 ms-3 ms-sm-0"}>
+        <div className={styles.logo + " " + "col-4 col-sm-3 col-md-2 ml-2"}>
           <Image
             alt="logo"
             src={Logo}
-            width={160}
-            height={55}
+            width={0}
+            height={0}
+            style={{
+              width: 200,
+              height: 60
+            }}
+            sizes="100vw"
             onClick={() => {
               router.push("/");
             }}
@@ -186,7 +191,7 @@ function Header() {
           className={
             styles.menu_list_mobile +
             " " +
-            "col-9 col-xl-7 p-0 d-lg-none d-flex justify-content-end align-items-center pe-3 cursor-pointer"
+            "col-8 col-xl-7 p-0 d-lg-none d-flex align-items-center justify-content-end pe-3 cursor-pointer"
           }
         >
           {/* <i class="fas fa-bars"></i> */}
@@ -201,11 +206,13 @@ function Header() {
               <div className={styles.menu_list_mobile_dropdown}>
                 {TAG.map((item, index) => {
                   return (
-                    <div key={index}>
+                    <div className="w-100 px-4" style={{
+                      textAlign: "left"
+                    }} key={index}>
                       <Link href={item.url} key={index}>
                         {item.dropdown ? (
                           <a
-                            className={
+                            className={ 
                               isAsPath.includes(checkActive(item.tag))
                                 ? [
                                     styles.link,
@@ -216,13 +223,15 @@ function Header() {
                             }
                             onClick={(e) => e.preventDefault()}
                           >
-                            <span
-                              style={{
-                                backgroundColor: "transparent",
-                              }}
+                            <div
+                              // style={{
+                              //   backgroundColor: "transparent",
+                              //   position:"relative",
+                              //   width: "100%"
+                              // }}
                             >
                               {item.name}
-                            </span>
+                            </div>
 
                             <ul className={styles.dropdown_menu}>
                               {item.tabSub.map((itemChild, index) => {

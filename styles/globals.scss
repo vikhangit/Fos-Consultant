@@ -649,10 +649,11 @@ input[type="checkbox"] {
 }
 
 .bar div.mobile_dropdown {
+	width: 250px;
 	display: none;
 	position: fixed;
 	margin-top: 60px;
-	right: 5%;
+	right: 50%;
 	background-color: white;
 }
 
