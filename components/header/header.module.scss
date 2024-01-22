@@ -159,6 +159,27 @@
 					.active {
 						color: #f66e1a;
 					}
+					@media screen and (max-width: 576px) {
+						position: unset;
+						min-width: 100%;
+						width: 100%;
+						padding-right: 0px;
+						padding-bottom: 0px;
+						margin-bottom: 0px;
+						.dropdown_item{
+							padding-right: 0px;
+							// color: black;
+							// &:first-child{
+							// 	padding-top: 0px;
+							// }
+							// &:last-child{
+							// 	padding-bottom: 0px;
+							// }
+						}
+						.active {
+							color: #f66e1a;
+						}
+					}
 				}
 
 				&:hover .dropdown_menu li {
