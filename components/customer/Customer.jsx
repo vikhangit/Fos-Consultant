@@ -36,12 +36,13 @@ function Customer() {
   return (
     <div className={styles.customer}>
       <div className={styles.customer_slide}>
-        <p className="title text-center mb-0">Our Customers</p>
+        <p className="title text-center mb-5">Our Customers</p>
 
         <Slider {...settings}>
           {listCustomer.map((item, index) => (
             <div key={index} className="text-center">
-              <Image src={item.img} width={200} height={200} alt="logo" />
+              <Image src={item.img} width={200} height={200}  style={{
+              }} alt="logo" />
             </div>
           ))}
         </Slider>

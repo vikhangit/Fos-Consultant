@@ -98,10 +98,10 @@ function Header() {
     >
       <div
         className={
-          styles.header + "  " + "justify-content-between align-items-center mx-auto text-left d-flex pt-2 pb-2"
+          styles.header + "  " + "justify-content-between align-items-center mx-auto text-left d-flex pt-2 pb-2 "
         }
       >
-        <div className={styles.logo + " " + "col-4 col-sm-3 col-md-2 ml-2"}>
+        <div className={styles.logo + " " + "col-4 col-sm-3 col-md-2"}>
           <Image
             alt="logo"
             src={Logo}
