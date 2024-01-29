@@ -41,7 +41,7 @@
     "slick-carousel": "^1.8.1",
     "split-type": "^0.3.3",
     "sweetalert2": "^11.7.1",
-    "swiper": "^8.3.2"
+    "swiper": "^8.4.7"
   },
   "devDependencies": {
     "eslint": "8.25.0",

@@ -3,6 +3,8 @@ import React from "react";
 import Slider from "react-slick";
 import { listCustomer } from "../../utils/Data/Customer";
 import styles from "./Customer.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper";
 
 function Customer() {
   const settings = {
@@ -37,15 +39,42 @@ function Customer() {
     <div className={styles.customer}>
       <div className={styles.customer_slide}>
         <p className="title text-center mb-5">Our Customers</p>
-
-        <Slider {...settings}>
-          {listCustomer.map((item, index) => (
-            <div key={index} className="text-center">
-              <Image src={item.img} width={200} height={200}  style={{
-              }} alt="logo" />
+        <Swiper
+        slidesPerView={2}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+         modules={[Autoplay]}
+         breakpoints={{
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          576: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+        className="mySwiper"
+      >
+        
+        {listCustomer.map((item, index) => (
+            <div key={index}>
+              <SwiperSlide><Image src={item.img} width={0} height={0} sizes="100vw" objectFit="contain" style={{
+                width: "100%"  }} alt="logo" /></SwiperSlide>
             </div>
           ))}
-        </Slider>
+      </Swiper>
       </div>
     </div>
   );

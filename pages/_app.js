@@ -12,6 +12,11 @@ import "../styles/globals.scss";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 function MyApp({ Component, pageProps }) {
 	const [showChild, setShowChild] = useState(false);
