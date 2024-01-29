@@ -105,13 +105,9 @@ function Header() {
           <Image
             alt="logo"
             src={Logo}
-            width={0}
-            height={0}
-            style={{
-              width: 200,
-              height: 60
-            }}
-            sizes="100vw"
+            width={150}
+            height={60}
+            objectFit="contain"
             onClick={() => {
               router.push("/");
             }}
