@@ -70,8 +70,7 @@ function Customer() {
         
         {listCustomer.map((item, index) => (
             <div key={index}>
-              <SwiperSlide><Image src={item.img} width={0} height={0} sizes="100vw" objectFit="contain" style={{
-                width: "100%"  }} alt="logo" /></SwiperSlide>
+              <SwiperSlide><Image src={item.img} width={500} height={320} objectFit="cover"  alt="logo" /></SwiperSlide>
             </div>
           ))}
       </Swiper>
