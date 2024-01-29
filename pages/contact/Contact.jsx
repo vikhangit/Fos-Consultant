@@ -104,7 +104,7 @@ export default function Contact() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://goeco.link/UuAKt"
+                href="https://maps.app.goo.gl/JpWJMEWjDutssgoM8"
               >
                 35 Hoa Sứ, Phường 07, Quận Phú Nhuận, Tp HCM
               </a>
